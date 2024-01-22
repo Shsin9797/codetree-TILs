@@ -3,7 +3,7 @@ arr = [[0 for _ in range(n)] for _ in range(n)]
 
 for i in range(1,m+1):
     r,c = map(int,input().split())
-    arr[r-1][c-1] =1 
+    arr[r-1][c-1] = i #i 로 적는거 주의
 
 for a in arr:
     print(*a)
