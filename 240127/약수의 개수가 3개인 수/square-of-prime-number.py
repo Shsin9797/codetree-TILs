@@ -8,4 +8,5 @@ for i in range(start,end+1):
 
     if cnt ==3:
         cnt2 +=1 
+        
 print(cnt2)
