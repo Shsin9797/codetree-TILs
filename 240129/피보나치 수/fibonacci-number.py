@@ -6,7 +6,7 @@ n=int(input())
 F=[0 for _ in range(n+1)]
 F[1]=1
 F[2]=1
-
-for i in range(3,n+1):
-    F[i] = F[i-1]+(i-1)
+if n>2:
+    for i in range(3,n+1):
+        F[i] = F[i-1]+(i-1)
 print(F[n])
