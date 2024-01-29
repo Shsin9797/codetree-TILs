@@ -10,7 +10,7 @@ dp[5]=2
 
 # 3. 점화식
 if n>=5:    
-    for i in range(5,n):
+    for i in range(5,n+1):# 플러스1 해줘야 n 번째 됨 
         dp[i]  = dp[i-2]+dp[i-3]
 
 
