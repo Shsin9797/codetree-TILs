@@ -9,5 +9,5 @@ while True:
     if cnt%2 ==1:
         li.append(a)
 
-print(len(li))
+print(cnt)
 print(*li,sep="\n")
