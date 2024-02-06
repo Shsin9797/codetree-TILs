@@ -26,11 +26,11 @@ if not checkMun(m):
 else:
     print(f"{x} {m} {y} = ",end="")
 
-if m =='+':
-    print(plus(x,y))
-elif m=='-':
-    print(minus(x,y))
-elif m=='/':
-    print(divide(x,y))
-elif m == '*':
-    print(multiply(x,y))
+    if m =='+':
+        print(plus(x,y))
+    elif m=='-':
+        print(minus(x,y))
+    elif m=='/':
+        print(divide(x,y))
+    elif m == '*':
+        print(multiply(x,y))
