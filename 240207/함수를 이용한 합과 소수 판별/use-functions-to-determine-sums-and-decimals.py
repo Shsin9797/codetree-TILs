@@ -18,7 +18,7 @@ def sumJa(x):
 a,b= map(int,input().split())
 
 cnt =0 
-for i in range(a,b):
+for i in range(a,b+1): # 이하 라서 ..b 도 포함해야함 
     if isSosu(i) and sumJa(i)%2==0:
         cnt +=1
 
