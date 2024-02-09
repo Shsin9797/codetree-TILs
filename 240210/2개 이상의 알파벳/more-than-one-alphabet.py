@@ -3,9 +3,9 @@ def isTwo(x):
     
     for i in range(len(x)):
         if x[i] != a:
-            return False
+            return True
     
-    return True
+    return False
 
 A= input().split()
 
