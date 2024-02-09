@@ -1,9 +1,11 @@
 def isTwo(x):
     a= x[0]
+    
     for i in range(len(x)):
-        if i !=a:
-            return True
-    return False 
+        if x[i] != a:
+            return False
+    
+    return True
 
 A= input().split()
 
