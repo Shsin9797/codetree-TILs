@@ -12,6 +12,7 @@ def f():
                 break
         if flag:
             num = n 
+            break
     return num
 
 print(f())
