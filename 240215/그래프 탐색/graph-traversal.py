@@ -23,5 +23,5 @@ for i in range(m):
 
 #dfs 탐색 
 DFS(1)
-visited[1] = 0
+visited[1] = 0 #첫방문 정점은 0으로 바꾸기 ... 
 print(sum(visited))
