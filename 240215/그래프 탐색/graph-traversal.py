@@ -23,5 +23,5 @@ for i in range(m):
 
 #dfs 탐색 
 DFS(1)
-
-print(sum(visited)-1)
+visited[1] = 0
+print(sum(visited))
