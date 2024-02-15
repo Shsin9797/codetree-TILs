@@ -9,6 +9,18 @@ arr.sort(reverse=True)
 arr2 = arr
 """
 
+""" 
+해설 이해 잘 안되는 부분
+ 
+이때 M+a >= b+m 
+(M>=b, a>=m 이므로 )
+a와 m 을 서로바꿔서 
+[M,m],[a,b]로 만들면 M+m 과 a+b 값이 최댓값이 될수있습니다.  <<<<<< 
+하지만 두 값 모두 M+a 보다는 같거나 작습니다. 
+
+
+"""
+
 arr.sort()
 arr1= arr[::]
 arr2 = arr[::-1]
