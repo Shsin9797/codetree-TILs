@@ -8,5 +8,6 @@ for i in range(n):
     sortedList.append(numList[i])
     if i%2 ==0:
         sortedList.sort()
-        slen= (i+1)//2
-        print(sortedList[slen],end=" ")
+        slen= (i+1)//2 #이거 값 찾는거 주의 .. numList의 len이나 sortedList 의 len 쓰면 안되고. i를 써야함 .. sortedList -1 를 쓰던지,index 값이라서 그럼.. 
+
+        #print(sortedList[slen],end=" ")
