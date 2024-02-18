@@ -1,4 +1,4 @@
-class Info():
+class Info():# () 필요없었음..
     def __init__(self,code,area,time):
         self.code = code
         self.area = area
