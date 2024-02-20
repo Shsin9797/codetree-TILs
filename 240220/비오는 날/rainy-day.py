@@ -15,7 +15,7 @@ for _ in range(n):
 
 short = nlist[0].date 
 idx=0
-for i in range(n):
+for i in range(len(nlist)):
     w= nlist[i]
     if w.date < short: 
         short = w.date
