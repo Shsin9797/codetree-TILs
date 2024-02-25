@@ -14,7 +14,7 @@ for _ in range(n):
     #x,y = 
     spotLi.append(Spot(*map(int,input().split())))
 
-spotLi.sort(key= lambda j: (j.x+j.y,j.cnt))
+spotLi.sort(key= lambda j: ((j.x+j.y),j.cnt))
 
 for k in spotLi:
     print(k.cnt)
