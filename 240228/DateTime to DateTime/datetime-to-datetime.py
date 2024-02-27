@@ -11,10 +11,9 @@ elif A ==a and B ==b and C > c:
 else:
 
     while True :
-        totalMin +=1
-        C +=1
 
-        if A==a and B==b and C==c:
+
+        if A==a and B==b and C==c: # 얘 위치 주의.. 맨처음에 체크하고 들어가야.. .시작시간이랑 끝나는 시간 같을때도 0 제대로 나옴 
             break
 
         if C >= 60:
@@ -24,4 +23,7 @@ else:
         if B >= 24 :
             A +=1
             B=0
+
+        totalMin +=1
+        C +=1
     print(totalMin)
