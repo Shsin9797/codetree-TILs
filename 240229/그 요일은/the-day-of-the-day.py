@@ -17,7 +17,7 @@ while True :
     
     # 값변경
     d1 +=1 
-    if d1 > dayNum[m1]:
+    if d1 >= dayNum[m1]:
         m1 +=1
         d1 =1
     aIdx +=1 
