@@ -2,7 +2,7 @@ n= int(input())
 pointer =0
 orderList =[]
 RANGE = 100000
-RANGE =30
+
 #명령 입력받기 
 for _ in range(n):
     x,d =input().split()
