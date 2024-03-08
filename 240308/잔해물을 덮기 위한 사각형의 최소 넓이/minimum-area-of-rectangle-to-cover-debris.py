@@ -14,6 +14,7 @@ bx2 += OFFSET
 by1 += OFFSET
 by2 += OFFSET
 
+
 #첫번째 사각형 채우기 
 for i in range(ax1,ax2):
     for j in range(ay1,ay2):
@@ -25,12 +26,13 @@ for i in range(bx1,bx2):
         arr[i][j] =0 
 
 
-
+flag= False
 #가로길이 구하기 
 sx,sy,ex,ey = ax1,ay1,ax2,ay2
 for i in range(ax1,ax2):
     for j in range(ay1,ay2):
         if arr[i][j] == 1 :
+            flag =True
             if sx > i : 
                 sx = i 
             if sy >j :
@@ -41,4 +43,7 @@ for i in range(ax1,ax2):
                 ey =j
 
 #넓이 구하기 
-print((ex-sx)*(ey-sy) )
+if flag:
+    print((ex-sx)*(ey-sy) )
+else:
+    print(0)
