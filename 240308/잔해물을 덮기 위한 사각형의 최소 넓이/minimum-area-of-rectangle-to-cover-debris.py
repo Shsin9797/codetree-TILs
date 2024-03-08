@@ -4,6 +4,16 @@ OFFSET=1000
 MINRAN = 2001
 arr = [[0]*(MINRAN+1) for _ in range(MINRAN+1)]
 
+ax1 += OFFSET
+ax2 += OFFSET
+ay1 += OFFSET
+ay2 += OFFSET
+
+bx1 += OFFSET
+bx2 += OFFSET
+by1 += OFFSET
+by2 += OFFSET
+
 #첫번째 사각형 채우기 
 for i in range(ax1,ax2):
     for j in range(ay1,ay2):
