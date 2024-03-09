@@ -48,4 +48,7 @@ for i in range(ax1,ax2):
                     by = j  
 
 #넓이 구하기 
-print((bx-ax+1)*(by-ay+1))
+if isExisted:
+    print((bx-ax+1)*(by-ay+1))
+else:
+    print(0)
