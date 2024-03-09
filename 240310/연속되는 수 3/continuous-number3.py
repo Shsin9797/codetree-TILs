@@ -16,5 +16,7 @@ for i in range(len(arr)):
     else:
         cnt+=1
 
+cntList.append(cnt) # 마지막에도 넣긴해야함 ..
+
 
 print(max(cntList))
