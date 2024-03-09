@@ -13,4 +13,6 @@ for i in range(n):
     else:
         cnt +=1
 
+cntList.append(cnt)
+
 print(max(cntList))
