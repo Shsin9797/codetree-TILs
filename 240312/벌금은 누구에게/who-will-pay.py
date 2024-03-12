@@ -6,6 +6,6 @@ for _ in range(M):
     fair[num] +=1
     if fair[num] >= K:
         a=num
-        break
+        break # 멈춰야함..
     
 print(a)
