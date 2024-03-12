@@ -6,5 +6,6 @@ for _ in range(M):
     fair[num] +=1
     if fair[num] >= K:
         a=num
+        break
     
 print(a)
