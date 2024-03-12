@@ -32,8 +32,13 @@ for _ in range(m):
             bP += 1
         B.append(bP)
 
+isNoSamePosition =True
 #만나는 지점 찾기 
 for k in range(1,len(A)):
     if A[k] == B[k]:
         print(k)
+        isNoSamePosition =False
         break
+
+if isNoSamePosition:
+    print(-1)
