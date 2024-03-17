@@ -30,12 +30,12 @@ while True :
             infected[d2] =1
             infectionCnt[d2] =K
         infectionCnt[d1] -=1
-    elif infected[d2] ==1 and infectionCnt[d2] >0:
+    if infected[d2] ==1 and infectionCnt[d2] >0:
         if infected[d1] ==0:
             infected[d1] =1
             infectionCnt[d1] =K
         infectionCnt[d2] -=1
     time +=1
 
-infected.pop(0)
+infected.pop(0)# 첫번째 0초일때 빼줘야함 
 print(*infected,sep="")
