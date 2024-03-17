@@ -29,15 +29,15 @@ while True :
         if infected[d2] == 0:
             infected[d2] =1
             infectionCnt[d2] =K
-        if infected[d2] ==1 and infectionCnt[d2] >0:#감염된 사람끼리 악수하는경우 고려 
-            infectionCnt[d2] -=1
+        #if infected[d2] ==1 and infectionCnt[d2] >0:#감염된 사람끼리 악수하는경우 고려 
+        #    infectionCnt[d2] -=1
         infectionCnt[d1] -=1
     elif infected[d2] ==1 and infectionCnt[d2] >0: 
         if infected[d1] ==0:
             infected[d1] =1
             infectionCnt[d1] =K
-        if infected[d1] ==1 and infectionCnt[d1] >0:
-            infectionCnt[d1] -=1
+        #if infected[d1] ==1 and infectionCnt[d1] >0:
+        #    infectionCnt[d1] -=1
         infectionCnt[d2] -=1
     time +=1
 
