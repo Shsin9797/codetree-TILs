@@ -7,7 +7,7 @@ Arrived = False
 x,y = 0,0
 dys,dxs=[-1,0,1,0],[0,1,0,-1]
 
-def inRange(ny,nx):
+def inRange(ny,nx):#범위 내인걸 찾을 필요가 없었음..
     return 0<=ny<MaxLen and 0<=nx<MaxLen
 
 for _ in range(n):
