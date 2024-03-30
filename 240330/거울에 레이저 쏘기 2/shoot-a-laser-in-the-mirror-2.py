@@ -44,12 +44,12 @@ def inRange(dy,dx):
 
 #진행하기 
 cnt =0  
-#
+
 while inRange(y,x):#범위내인지 확인 
-    print('x',x,'y',y,'b',b)
+    #print('x',x,'y',y,'b',b)
     #거울 찾기 
     m = arr[y][x]
-    print(m)
+    #print(m) :거울 확인용
     cnt+=1 # 거울 한번 마주침 
     b= changeDirect(m,b) #방향 먼저 바꾸고 
     x,y = x+dxs[b], y+dys[b]#위치변경 
