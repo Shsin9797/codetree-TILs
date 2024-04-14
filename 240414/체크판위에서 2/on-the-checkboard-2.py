@@ -5,22 +5,41 @@ color1 = mat[0][0]
 
 cnt = 0 
 
-for i in range(R-2): #행 
-    for j in range(C-2): #열 
+for i in range(1,R-2): #행 
+    for j in range(1,C-2): #열 
+
         if color1 != mat[i][j]:
             color2 = mat[i][j]
-            for k in range(i+1,R-1):
-                for t in range(j+1,C-1):
+            #print(i,j,end=" >> ")
+            
+            for k in range(i+1,R-1):#행
+                for t in range(j+1,C-1):#열
+
                     if color2 != mat[k][t]:
                         color3 = mat[k][t]
-                        if color3 != mat[R-1][C-1] and k<R-1 and t<C-1:
+                        #print(k,t,end=" >> ")
+
+                        if color3 != mat[R-1][C-1] :
                             cnt +=1
+                            #print()
 
 print(cnt)
 
 
 
-
+'''
+10 10
+B W B B W B W W W B 
+B W B W B W W B W W 
+W W W B W W B B W B 
+B W B W W W W B B B 
+B B B B W W W W B B 
+W W W B B W W W B B 
+B B B W B W B W W W 
+W W B W W W W W W W 
+B W B W B B W W W W 
+B B W W W B W W B W 
+'''
 
 
 '''
