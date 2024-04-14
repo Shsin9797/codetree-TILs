@@ -1,3 +1,4 @@
+'''답지
 # 변수 선언 및 입력
 n, m = tuple(map(int, input().split()))
 grid = [
@@ -19,8 +20,9 @@ for i in range(1, n):
                     cnt += 1
                         
 print(cnt)
+'''
 
-'''R,C = map(int,input().split())
+R,C = map(int,input().split())
 mat= [input().split() for _ in range(R)]
 
 color1 = mat[0][0] 
@@ -47,7 +49,7 @@ for i in range(1,R-2): #행
 
 print(cnt)
 
-'''
+
 
 '''
 10 10
