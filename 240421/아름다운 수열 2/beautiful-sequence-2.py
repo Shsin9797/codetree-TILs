@@ -11,6 +11,7 @@ for i in range(n-m+1):#A의 시작점
         for t in range(m):
             if A[k] == BB[t]:
                 BB[t]=0
+                break # 한번 없앴으면 끝내야됌 
     
     #BB 값 다삭제되면 cnt 값 증가 
     if sum(BB)==0:
