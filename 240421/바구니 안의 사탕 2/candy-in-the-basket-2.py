@@ -9,9 +9,11 @@ for _ in range(n):
 #길이 : K*2 +1 
 max_candy=0
 
-for i in range(101-2*k): # 시작점
+for i in range(101): # 시작점
     sum_candy=0
     for j in range(i,i+2*k+1):
+        if j >100:
+            break
         sum_candy += arr[j]
     
     max_candy= max(max_candy,sum_candy)
