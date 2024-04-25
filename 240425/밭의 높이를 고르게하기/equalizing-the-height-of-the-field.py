@@ -7,7 +7,7 @@ min_cnt = sys.maxsize
 
 for start in range(n):
 
-    if start+t >= n: 
+    if start+t > n: 
             break
     
     for end in range(start,start+t): #시작점끝점 정하기 
