@@ -26,8 +26,11 @@ for i in range(1,n+1): #각 사람 선택
 
     #정확히 아픈시각 이전에 먹은 치즈 다 찾기 
     for time,cheese in ptm[i]:
-        if time < ill_time :
+        if time < ill_time and (i not in rot[cheese]):#중복해서 먹은거 제거 .. (있으면 길이가 안맞아짐..)
             rot[cheese].append(i)
+
+#rot=set(rot)
+#rot = list(rot)
 
 #print('상한치즈 후보' , rot)
 max_cnt =0
