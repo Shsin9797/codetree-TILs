@@ -1,4 +1,4 @@
-n,M,d,s = map(int,input().split())
+n,M,d,s = map(int,input().split()) #사람의 수 N, 치즈의 수 M, 치즈를 먹은 기록의 수 D, 그리고 아픈 기록의 수 S
  
 ptm=[[] for _ in range(n+1)] #치즈 먹은 초와 먹은 치즈 저장 ****
 #print(ptm)
@@ -15,8 +15,8 @@ for _ in range(s):
     p,t = map(int,input().split())
     pti[p]=t
 
-#print('치즈 먹은 시각,치즈:',ptm)
-#print('아프기 시작한 시각', pti)
+print('치즈 먹은 시각,치즈:',ptm)
+print('아프기 시작한 시각', pti)
 
 #안상한게 확실한 치즈를 고를까.. 
 rot =[[] for _ in range(M+1)] #문자 안바뀌게 주의
@@ -29,7 +29,7 @@ for i in range(1,n+1): #각 사람 선택
         if time < ill_time :
             rot[cheese].append(i)
 
-#print('상한치즈 후보' , rot)
+print('상한치즈 후보' , rot)
 cnt= 0 
 for i in range(M+1):
     if rot[i] != []:
