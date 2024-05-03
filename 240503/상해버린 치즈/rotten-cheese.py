@@ -15,9 +15,31 @@ for _ in range(s):
     p,t = map(int,input().split())
     pti[p]=t
 
-print(ptm)
-print(pti)
+#print('치즈 먹은 시각,치즈:',ptm)
+#print('아프기 시작한 시각', pti)
 
+#안상한게 확실한 치즈를 고를까.. 
+rot =[[] for _ in range(M+1)] #문자 안바뀌게 주의
+
+for i in range(1,n+1): #각 사람 선택 
+    ill_time = pti[i] #아픈시각찾기
+
+    #정확히 아픈시각 이전에 먹은 치즈 다 찾기 
+    for time,cheese in ptm[i]:
+        if time < ill_time :
+            rot[cheese].append(i)
+
+#print('상한치즈 후보' , rot)
+cnt= 0 
+for i in range(M+1):
+    if rot[i] != []:
+        cnt +=1 
+
+print(cnt)
+        
+            
+
+'''
 #상한 치즈 고르기 
 rot =[0]*(M+1) #문자 안바뀌게 주의
 
@@ -43,3 +65,4 @@ for i in range(1,n+1):
             cnt +=1 
 
 print(cnt)
+'''
