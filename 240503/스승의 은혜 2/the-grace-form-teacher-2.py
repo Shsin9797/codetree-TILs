@@ -25,7 +25,7 @@ for i in range(n):
             #cnt +=1
             continue 
         else:
-            cnt= k+1
+            cnt= k
             break
     
     max_cnt =max(max_cnt,cnt)
