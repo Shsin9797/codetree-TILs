@@ -24,8 +24,10 @@ def isSam(i1,i2,i3):
 #점 세개 구하기
 li=[]
 for i in range(n):
-    for j in range(i+1,n):
-        for k in range(j+1,n):
+    for j in range(n):
+        for k in range(n): #이거 j+1 아니라 0 ~ n-1 까ㅣ인지.. 
+            if i==j or j==k or k==i:
+                continue
             #print(spots[i],spots[j],spots[k])
             li.append(isSam(spots[i],spots[j],spots[k]))
 #print(li)
