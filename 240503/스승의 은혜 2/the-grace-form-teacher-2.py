@@ -15,13 +15,17 @@ for i in range(n):
     p[i] /=2
     #오름차순 정렬
     pp.sort() #sort(pp)
+    #print(pp)
+    
     #명수 세기 
     cnt = 0 
     for k in range(n):
         bb -= pp[k]
         if bb >= 0:
-            cnt +=1 
+            #cnt +=1
+            continue 
         else:
+            cnt= k+1
             break
     
     max_cnt =max(max_cnt,cnt)
