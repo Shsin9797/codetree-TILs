@@ -31,8 +31,8 @@ for i in range(n):
             #cnt= k
             break
     
-    if max_cnt == cnt :
-        break 
+    #if max_cnt == cnt : #이런거 하지말기.. 
+    #    break 
 
     max_cnt =max(max_cnt,cnt)
 
