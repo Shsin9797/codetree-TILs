@@ -1,3 +1,4 @@
+'''답지풀이
 # 변수 선언 및 입력
 k, n = tuple(map(int, input().split()))
 arr = [
@@ -33,7 +34,8 @@ for i in range(1, n + 1):
     
 print(ans)
 
-'''k,n = map(int,input().split())
+'''
+k,n = map(int,input().split())
 arr=[]
 for _ in range(k):
     li=list(map(int,input().split()))
@@ -66,4 +68,3 @@ for i in range(1,n+1):# 첫번째 개발자 :a  # 0 부터 세면 안됨  1부�
             cnt +=1 #a 가 항상 b 보다 높은 순위였다.(낮은값 )
 
 print(cnt) # 왜 두배값이 나오지.. .
-         '''
