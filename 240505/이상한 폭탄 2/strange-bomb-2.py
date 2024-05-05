@@ -3,12 +3,16 @@ nums = [int(input()) for _ in range(N)]
 #같은 번호 부여된 폭탄찾기 
 
 max_num = -1 
-
+print(nums)
 for i in range(N):
-    for j in range(i-3,i+4):
+    for j in range(i-3,i+4):# 특정 숫자를 적으면안되고... K 를 적어야죠.. 
+        if i==j : #같은애면 안됨 
+            continue # break 하면안됨..
         if j<0 or j>(N-1):
-            break 
+            continue #break 하면 안됨 
+        
         if nums[i]==nums[j]:
+            print(nums[i],nums[j])
             max_num= max(max_num,nums[i])
 
 print(max_num)
