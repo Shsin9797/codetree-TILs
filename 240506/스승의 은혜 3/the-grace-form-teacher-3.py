@@ -21,7 +21,7 @@ def student_cnt(bud,student_list):
     while bud > 0: 
         if i>= n:
             break
-        bud -= student_list[i].price
+        bud -= (student_list[i].price+student_list[i].ship) # 물건값이랑 배송비 모두 빼줘야함 
         if bud >= 0: # 빼고 나서도 0 보다 큰경우에 cnt 증가시켜줘야함  
             cnt+=1
         i+=1
