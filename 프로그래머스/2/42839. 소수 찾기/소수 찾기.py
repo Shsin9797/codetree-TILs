@@ -12,12 +12,12 @@ def solution(numbers):
         #print(list(nums))
         num_set |= set(map(int,map("".join, nums)))
     
-    print(num_set)
+    #print(num_set)
     
     ## 소수찾기 (에라토스 테네스의 체 활용)
     num_set -= set(range(0,2)) # 0과 1을 빼준다
     lim = int(max(num_set)**0.5) +1
-    print(lim)
+    #print(lim)
     
     for k in range(2,lim):
         num_set -= set(range(k*2, max(num_set)+1,k)) # i 로 안적게 주의..
